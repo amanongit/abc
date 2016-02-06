@@ -1,0 +1,26 @@
+Use Case Title -	Report Defects
+
+Brief Description -	User reports the defects of a specific product line batch.
+
+Preconditions    -	n/a
+
+Triggering event -	User reports defects.
+
+Main Flow -	1.	User selects to report a defect.
+2.	The system requests information regarding the defect such as affected product line, affected batch, affected parts, etc.
+3.	User confirms the input information.
+4.	System requests user credentials for authentication.
+5.	If the user is authorized, information of the defect is processed and the inventory database is updated
+6.	System logs operation.
+7.	System shows successful operation message.
+
+Alternate Flow -	1.	User selects to report a defect.
+2.	The system requests information regarding the defect such as affected product line, affected batch, affected parts, etc.User confirms the input information.
+3.	User confirms the input information.
+4.	System requests user credentials for authentication.
+5.	If user is not authorized, information of the defect is not processed. 
+6.	System logs operation.
+7.	System shows unsuccessful operation message.
+8.	Go to Step 4
+
+Postconditions -	n/a
