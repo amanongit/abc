@@ -9,6 +9,10 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_uFxOYtqJEeW9ZYWJqYDMcQ" y="5"/>
         </children>
         <children xmi:type="notation:BasicCompartment" xmi:id="_uFzDkNqJEeW9ZYWJqYDMcQ" type="7011">
+          <children xmi:type="notation:Shape" xmi:id="_oNz1INqMEeW9ZYWJqYDMcQ" type="3012">
+            <element xmi:type="uml:Property" href="Class_diagram_Car_Manufacturing.uml#_oNXwQNqMEeW9ZYWJqYDMcQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_oN0cMNqMEeW9ZYWJqYDMcQ"/>
+          </children>
           <styles xmi:type="notation:TitleStyle" xmi:id="_uFzDkdqJEeW9ZYWJqYDMcQ"/>
           <styles xmi:type="notation:SortingStyle" xmi:id="_uFzDktqJEeW9ZYWJqYDMcQ"/>
           <styles xmi:type="notation:FilteringStyle" xmi:id="_uFzDk9qJEeW9ZYWJqYDMcQ"/>
