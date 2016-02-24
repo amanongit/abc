@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:java="http://www.eclipse.org/papyrus/JAVA/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_3zK04NqWEeWzdtWbIAO6Bg" name="RootElement">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_6MKskNqWEeWzdtWbIAO6Bg">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_8d43kNqWEeWzdtWbIAO6Bg" name="JavaPrimitiveTypes" URI="http://www.eclipse.org/uml2/4.2.0/JavaPrimitiveTypes">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43kdqWEeWzdtWbIAO6Bg" name="boolean"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43ktqWEeWzdtWbIAO6Bg" name="byte"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43k9qWEeWzdtWbIAO6Bg" name="char"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43lNqWEeWzdtWbIAO6Bg" name="double"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43ldqWEeWzdtWbIAO6Bg" name="float"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43ltqWEeWzdtWbIAO6Bg" name="int"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43l9qWEeWzdtWbIAO6Bg" name="long"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8d43mNqWEeWzdtWbIAO6Bg" name="short"/>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8d43mdqWEeWzdtWbIAO6Bg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8d43mtqWEeWzdtWbIAO6Bg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GHqOMNqXEeWzdtWbIAO6Bg" name="einventory">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MEkRgNqXEeWzdtWbIAO6Bg" name="UserTypeEnum">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_M8YqUNqXEeWzdtWbIAO6Bg" name="ADMINISTRATOR"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ws13wNqXEeWzdtWbIAO6Bg" name="SUPPLY_CHAIN_AGENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XBDNMNqXEeWzdtWbIAO6Bg" name="PLANNING_AGENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XQYpsNqXEeWzdtWbIAO6Bg" name="INVENTORY_AGENT"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hgjR8NqXEeWzdtWbIAO6Bg" name="ManageUsers">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_95L7cNqXEeWzdtWbIAO6Bg" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_U1HrsNqYEeWzdtWbIAO6Bg" name="emailID" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fn7G8NqYEeWzdtWbIAO6Bg" name="password" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oOvy0NqYEeWzdtWbIAO6Bg" name="empID" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_H9NdwNqbEeWzdtWbIAO6Bg" name="username" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_sJ_V0NqXEeWzdtWbIAO6Bg" name="addUser"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ssV08NqXEeWzdtWbIAO6Bg" name="updateUser"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_tCRBoNqXEeWzdtWbIAO6Bg" name="removeUser"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_utcxENqXEeWzdtWbIAO6Bg" name="listUser"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0chXQNqYEeWzdtWbIAO6Bg" name="Administration">
+        <generalization xmi:type="uml:Generalization" xmi:id="_bliaINqZEeWzdtWbIAO6Bg" general="_hgjR8NqXEeWzdtWbIAO6Bg"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_YR5-0NqcEeWzdtWbIAO6Bg" general="_jhhj0NqaEeWzdtWbIAO6Bg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jhhj0NqaEeWzdtWbIAO6Bg" name="LoginController">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rtyaoNqaEeWzdtWbIAO6Bg" name="username" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_spl7kNqaEeWzdtWbIAO6Bg" name="password" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jL1LMNqbEeWzdtWbIAO6Bg" name="successMessage" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ugWzcNqbEeWzdtWbIAO6Bg" name="successMessage" value="Login is Successful"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wrf1UNqbEeWzdtWbIAO6Bg" name="filedMessage" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_3lImoNqbEeWzdtWbIAO6Bg" name="filedMessage" value="Login Failed"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_4NyXgNqaEeWzdtWbIAO6Bg" name="validateUsernamePassword">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_GHsGkNqbEeWzdtWbIAO6Bg" name="username">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_RmGDkNqbEeWzdtWbIAO6Bg" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_E5TLYNqcEeWzdtWbIAO6Bg" name="message" direction="out">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_kt7aoNqcEeWzdtWbIAO6Bg" name="isUserLogedIn"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_u2lFoNqcEeWzdtWbIAO6Bg" name="logout"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LG024NqXEeWzdtWbIAO6Bg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LG1d8NqXEeWzdtWbIAO6Bg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DItJwNqXEeWzdtWbIAO6Bg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DItJwdqXEeWzdtWbIAO6Bg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+    </profileApplication>
+  </uml:Model>
+  <java:JavaClass xmi:id="_jZH9INqXEeWzdtWbIAO6Bg" base_Classifier="_MEkRgNqXEeWzdtWbIAO6Bg"/>
+  <java:JavaClass xmi:id="_3EhUQNqYEeWzdtWbIAO6Bg" base_Classifier="_hgjR8NqXEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_38MjINqYEeWzdtWbIAO6Bg" base_Property="_95L7cNqXEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_487nYNqYEeWzdtWbIAO6Bg" base_Property="_U1HrsNqYEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_5vUGkNqYEeWzdtWbIAO6Bg" base_Property="_fn7G8NqYEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_6cjnENqYEeWzdtWbIAO6Bg" base_Property="_oOvy0NqYEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_7Hjr4NqYEeWzdtWbIAO6Bg" base_Operation="_sJ_V0NqXEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_76C4wNqYEeWzdtWbIAO6Bg" base_Operation="_ssV08NqXEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_8lebYNqYEeWzdtWbIAO6Bg" base_Operation="_tCRBoNqXEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_9R-VANqYEeWzdtWbIAO6Bg" base_Operation="_utcxENqXEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_NRfa0NqbEeWzdtWbIAO6Bg" base_Property="_H9NdwNqbEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_xcLO4NqcEeWzdtWbIAO6Bg" base_Property="_rtyaoNqaEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_yWZbcNqcEeWzdtWbIAO6Bg" base_Property="_spl7kNqaEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_zIp-0NqcEeWzdtWbIAO6Bg" base_Property="_jL1LMNqbEeWzdtWbIAO6Bg"/>
+  <java:JavaProperty xmi:id="_z4Hs4NqcEeWzdtWbIAO6Bg" base_Property="_wrf1UNqbEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_03HrwNqcEeWzdtWbIAO6Bg" base_Operation="_4NyXgNqaEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_1t1RUNqcEeWzdtWbIAO6Bg" base_Operation="_kt7aoNqcEeWzdtWbIAO6Bg"/>
+  <java:JavaMethod xmi:id="_2nQzsNqcEeWzdtWbIAO6Bg" base_Operation="_u2lFoNqcEeWzdtWbIAO6Bg"/>
+</xmi:XMI>
