@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_684VUNvqEeWTabVx0oz3ow" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_eBkpUNv6EeWTabVx0oz3ow" name="Inventory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_MqRkINvrEeWTabVx0oz3ow" name="CAPACITY">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4q-mUNv5EeWTabVx0oz3ow" name="itemCapacity"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1VzaQNv5EeWTabVx0oz3ow" name="checkcapacity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GdNk8NvrEeWTabVx0oz3ow" name="WAREHOUSE">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fMaWsNv4EeWTabVx0oz3ow" name="location"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fkwlQNv4EeWTabVx0oz3ow" name="warehouseId"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r338sNv4EeWTabVx0oz3ow" name="&lt;set>itemCategory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yC_bINv4EeWTabVx0oz3ow" name="getlocation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1vFSYNv4EeWTabVx0oz3ow" name="setlocation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3ieioNv4EeWTabVx0oz3ow" name="getwarehouseId"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__2qmYNv4EeWTabVx0oz3ow" name="setwarehouseId"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JRPy0NvrEeWTabVx0oz3ow" name="WAREHOUSE DAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_z20KMNvtEeWTabVx0oz3ow" name="addWarehouse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3wcHINvtEeWTabVx0oz3ow" name="listWarehouse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5wiWoNvtEeWTabVx0oz3ow" name="updatewarehouse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7ZvwINvtEeWTabVx0oz3ow" name="removeWarehouse"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EnQI4NvrEeWTabVx0oz3ow" name="ITEM CATEGORY">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xxQc0Nv2EeWTabVx0oz3ow" name="name"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_15hSsNv2EeWTabVx0oz3ow" name="description"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3sN_YNv2EeWTabVx0oz3ow" name="dimensions"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_XIidUNvsEeWTabVx0oz3ow" name="getname"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Yb-vQNv5EeWTabVx0oz3ow" name="setname"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cbZyMNv5EeWTabVx0oz3ow" name="getdescription"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fyAhoNv5EeWTabVx0oz3ow" name="setdescription"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kdnVINv5EeWTabVx0oz3ow" name="getdimension"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nsQbYNv5EeWTabVx0oz3ow" name="setdimension"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Rsv_gNvrEeWTabVx0oz3ow" name="ITEM">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_I7HUUNv3EeWTabVx0oz3ow" name="itemRefNum"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JZQo4Nv3EeWTabVx0oz3ow" name="providername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4VZp0Nv3EeWTabVx0oz3ow" name="getitemRefNum"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__kcDYNv3EeWTabVx0oz3ow" name="setitemRefNum"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CLx5ENv4EeWTabVx0oz3ow" name="getprovidername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CWabwNv4EeWTabVx0oz3ow" name="setprovidername"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fTuLgNvrEeWTabVx0oz3ow" name="CATEGORY DAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9Cr5UNvsEeWTabVx0oz3ow" name="addItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AJAxENvtEeWTabVx0oz3ow" name="listItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AO7L0NvtEeWTabVx0oz3ow" name="updateItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Pp7hQNvtEeWTabVx0oz3ow" name="removeItem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hI5kcNvrEeWTabVx0oz3ow" name="ITEM DAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXO8ENv3EeWTabVx0oz3ow" name="additemRefNum"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nnRfoNv3EeWTabVx0oz3ow" name="addprovider"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
