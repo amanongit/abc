@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_rVcYUNvoEeWSJaf2ccK7lw" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Az7BMNvrEeWSJaf2ccK7lw" name="util">
+    <packagedElement xmi:type="uml:Class" xmi:id="_yMB1oNvoEeWSJaf2ccK7lw" name="User">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yO38ANvtEeWSJaf2ccK7lw" name="firstname"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yqBm8NvtEeWSJaf2ccK7lw" name="lastname"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_25YjUNvtEeWSJaf2ccK7lw" name="loginID"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4NblINvtEeWSJaf2ccK7lw" name="password"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UOFMcNvuEeWSJaf2ccK7lw" name="empID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_15FSANvvEeWSJaf2ccK7lw" name="getFirstName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8_bpoNvvEeWSJaf2ccK7lw" name="setFirstName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9bkMANvvEeWSJaf2ccK7lw" name="getLastName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9z3-UNvvEeWSJaf2ccK7lw" name="setLastName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-QqoANvvEeWSJaf2ccK7lw" name="getLoginID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CkChsNvwEeWSJaf2ccK7lw" name="setLoginID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_C57SINvwEeWSJaf2ccK7lw" name="getEmployeeID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DL7BENvwEeWSJaf2ccK7lw" name="setEmployeeID"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2C4ycNvoEeWSJaf2ccK7lw" name="UserDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iPn78NvrEeWSJaf2ccK7lw" name="addUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iq2fYNvrEeWSJaf2ccK7lw" name="updateUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_i_KigNvrEeWSJaf2ccK7lw" name="removeUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jSgVQNvrEeWSJaf2ccK7lw" name="listUser"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ywWqsNvoEeWSJaf2ccK7lw" name="Role">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rCWmwNv0EeWSJaf2ccK7lw" name="Admin"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rcgzMNv0EeWSJaf2ccK7lw" name="PlanningAgent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rvTzYNv0EeWSJaf2ccK7lw" name="InventoryAgent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sDpEoNv0EeWSJaf2ccK7lw" name="SupplyChainAgent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9YodsNv4EeWSJaf2ccK7lw" name="setRole"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__TmVkNv4EeWSJaf2ccK7lw" name="getRole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2cYQgNvoEeWSJaf2ccK7lw" name="RoleDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KU2cgNv5EeWSJaf2ccK7lw" name="addRole"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_L92aoNv5EeWSJaf2ccK7lw" name="updateRole"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_PhDboNv5EeWSJaf2ccK7lw" name="removeRole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0e0-sNvoEeWSJaf2ccK7lw" name="Permission">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vVQb0NvzEeWSJaf2ccK7lw" name="setPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xwJw8NvzEeWSJaf2ccK7lw" name="checkPermission"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_22q_0NvoEeWSJaf2ccK7lw" name="PermissionDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0pmqUNvzEeWSJaf2ccK7lw" name="setAdminPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_08rXUNvzEeWSJaf2ccK7lw" name="setPlanningAgentPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1PBrkNvzEeWSJaf2ccK7lw" name="setInventoryAgentPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1gsqYNvzEeWSJaf2ccK7lw" name="setSupplyChainAgentPermission"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
