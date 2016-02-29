@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_s5ErMN8-EeW3l7M_cSZ57A" name="RootElement">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_Px3PDt8_EeW3l7M_cSZ57A">
+    <body>WHERE IS THE ASSOCIATION CLASS?</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_Px3PHt8_EeW3l7M_cSZ57A">
+    <body>How I include another domain?>??&#xD;
+</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1400cN8-EeW3l7M_cSZ57A" memberEnd="_1400dN8-EeW3l7M_cSZ57A _1400c98-EeW3l7M_cSZ57A" navigableOwnedEnd="_1400dN8-EeW3l7M_cSZ57A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1400cd8-EeW3l7M_cSZ57A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1400ct8-EeW3l7M_cSZ57A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1400c98-EeW3l7M_cSZ57A" name="item" type="_1400lN8-EeW3l7M_cSZ57A" association="_1400cN8-EeW3l7M_cSZ57A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1400dN8-EeW3l7M_cSZ57A" name="itemcategory" type="_1400it8-EeW3l7M_cSZ57A" association="_1400cN8-EeW3l7M_cSZ57A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_1400dd8-EeW3l7M_cSZ57A" name="Capacity" memberEnd="_1400gN8-EeW3l7M_cSZ57A _1400et8-EeW3l7M_cSZ57A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1400dt8-EeW3l7M_cSZ57A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1400d98-EeW3l7M_cSZ57A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1400eN8-EeW3l7M_cSZ57A" name="capacity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1400ed8-EeW3l7M_cSZ57A" name="getCapacity"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1400et8-EeW3l7M_cSZ57A" name="warehouse" type="_1400fN8-EeW3l7M_cSZ57A" association="_1400dd8-EeW3l7M_cSZ57A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1400e98-EeW3l7M_cSZ57A" name="Inventory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400fN8-EeW3l7M_cSZ57A" name="Warehouse">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400fd8-EeW3l7M_cSZ57A" name="location"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400ft8-EeW3l7M_cSZ57A" name="warehouseId"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400f98-EeW3l7M_cSZ57A" name="&lt;set>itemCategory"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400gN8-EeW3l7M_cSZ57A" name="itemcategory" type="_1400it8-EeW3l7M_cSZ57A" association="_1400dd8-EeW3l7M_cSZ57A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400gd8-EeW3l7M_cSZ57A" name="getlocation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400gt8-EeW3l7M_cSZ57A" name="setlocation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400g98-EeW3l7M_cSZ57A" name="getwarehouseId"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400hN8-EeW3l7M_cSZ57A" name="setwarehouseId"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400hd8-EeW3l7M_cSZ57A" name="WarehouseDao">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400ht8-EeW3l7M_cSZ57A" name="addWarehouse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400h98-EeW3l7M_cSZ57A" name="listWarehouse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400iN8-EeW3l7M_cSZ57A" name="updatewarehouse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400id8-EeW3l7M_cSZ57A" name="removeWarehouse"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400it8-EeW3l7M_cSZ57A" name="ItemCategory">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400i98-EeW3l7M_cSZ57A" name="name"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400jN8-EeW3l7M_cSZ57A" name="description"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400jd8-EeW3l7M_cSZ57A" name="dimensions"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400jt8-EeW3l7M_cSZ57A" name="getName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400j98-EeW3l7M_cSZ57A" name="setName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400kN8-EeW3l7M_cSZ57A" name="getdescription"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400kd8-EeW3l7M_cSZ57A" name="setdescription"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400kt8-EeW3l7M_cSZ57A" name="getdimension"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400k98-EeW3l7M_cSZ57A" name="setdimension"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400lN8-EeW3l7M_cSZ57A" name="Item">
+      <generalization xmi:type="uml:Generalization" xmi:id="_1400ld8-EeW3l7M_cSZ57A" general="_1400pd8-EeW3l7M_cSZ57A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400lt8-EeW3l7M_cSZ57A" name="itemRefNum"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400l98-EeW3l7M_cSZ57A" name="providername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400mN8-EeW3l7M_cSZ57A" name="getitemRefNum"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400md8-EeW3l7M_cSZ57A" name="setitemRefNum"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400mt8-EeW3l7M_cSZ57A" name="getprovidername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400m98-EeW3l7M_cSZ57A" name="setprovidername"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400nN8-EeW3l7M_cSZ57A" name="categoryDao">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400nd8-EeW3l7M_cSZ57A" name="itemcategory" type="_1400it8-EeW3l7M_cSZ57A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400nt8-EeW3l7M_cSZ57A" name="addItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400n98-EeW3l7M_cSZ57A" name="listItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400oN8-EeW3l7M_cSZ57A" name="updateItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400od8-EeW3l7M_cSZ57A" name="removeItem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400ot8-EeW3l7M_cSZ57A" name="ItemDao">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400o98-EeW3l7M_cSZ57A" name="additemRefNum"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1400pN8-EeW3l7M_cSZ57A" name="addprovider"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1400pd8-EeW3l7M_cSZ57A" name="inventoryItem">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1400pt8-EeW3l7M_cSZ57A" name="referenceNumber"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_1400p98-EeW3l7M_cSZ57A" client="_1400nN8-EeW3l7M_cSZ57A" supplier="_1400it8-EeW3l7M_cSZ57A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_1400qN8-EeW3l7M_cSZ57A" client="_1400hd8-EeW3l7M_cSZ57A" supplier="_1400fN8-EeW3l7M_cSZ57A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_1400qd8-EeW3l7M_cSZ57A" client="_1400ot8-EeW3l7M_cSZ57A" supplier="_1400lN8-EeW3l7M_cSZ57A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_4oh78N8-EeW3l7M_cSZ57A" name="util">
+    <packagedElement xmi:type="uml:Class" xmi:id="_4oh78d8-EeW3l7M_cSZ57A" name="User">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh78t8-EeW3l7M_cSZ57A" name="firstname"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh7898-EeW3l7M_cSZ57A" name="lastname"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh79N8-EeW3l7M_cSZ57A" name="loginID"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh79d8-EeW3l7M_cSZ57A" name="password"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh79t8-EeW3l7M_cSZ57A" name="empID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7998-EeW3l7M_cSZ57A" name="getFirstName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7-N8-EeW3l7M_cSZ57A" name="setFirstName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7-d8-EeW3l7M_cSZ57A" name="getLastName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7-t8-EeW3l7M_cSZ57A" name="setLastName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7-98-EeW3l7M_cSZ57A" name="getLoginID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7_N8-EeW3l7M_cSZ57A" name="setLoginID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7_d8-EeW3l7M_cSZ57A" name="getEmployeeID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh7_t8-EeW3l7M_cSZ57A" name="setEmployeeID"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4oh7_98-EeW3l7M_cSZ57A" name="UserDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8AN8-EeW3l7M_cSZ57A" name="addUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Ad8-EeW3l7M_cSZ57A" name="updateUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8At8-EeW3l7M_cSZ57A" name="removeUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8A98-EeW3l7M_cSZ57A" name="listUser"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4oh8BN8-EeW3l7M_cSZ57A" name="Role">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh8Bd8-EeW3l7M_cSZ57A" name="Admin"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh8Bt8-EeW3l7M_cSZ57A" name="PlanningAgent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh8B98-EeW3l7M_cSZ57A" name="InventoryAgent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4oh8CN8-EeW3l7M_cSZ57A" name="SupplyChainAgent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Cd8-EeW3l7M_cSZ57A" name="setRole"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Ct8-EeW3l7M_cSZ57A" name="getRole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4oh8C98-EeW3l7M_cSZ57A" name="RoleDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8DN8-EeW3l7M_cSZ57A" name="addRole"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Dd8-EeW3l7M_cSZ57A" name="updateRole"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Dt8-EeW3l7M_cSZ57A" name="removeRole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4oh8D98-EeW3l7M_cSZ57A" name="Permission">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8EN8-EeW3l7M_cSZ57A" name="setPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Ed8-EeW3l7M_cSZ57A" name="checkPermission"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4oh8Et8-EeW3l7M_cSZ57A" name="PermissionDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8E98-EeW3l7M_cSZ57A" name="setAdminPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8FN8-EeW3l7M_cSZ57A" name="setPlanningAgentPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Fd8-EeW3l7M_cSZ57A" name="setInventoryAgentPermission"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4oh8Ft8-EeW3l7M_cSZ57A" name="setSupplyChainAgentPermission"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_IWY78N8_EeW3l7M_cSZ57A" name="supplyChain">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Px3PI98_EeW3l7M_cSZ57A" name="ProductionUnitDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PJN8_EeW3l7M_cSZ57A" name="addProductionUnit"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PJd8_EeW3l7M_cSZ57A" name="removeProductionUnit"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PJt8_EeW3l7M_cSZ57A" name="updateProductionUnit"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PJ98_EeW3l7M_cSZ57A" name="listProductionUnit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Px3POt8_EeW3l7M_cSZ57A" name="ProductLineDAO">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PO98_EeW3l7M_cSZ57A" name="addProductLine"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PPN8_EeW3l7M_cSZ57A" name="removeProductLine"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PPd8_EeW3l7M_cSZ57A" name="updateProductLine"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PPt8_EeW3l7M_cSZ57A" name="listProductLine"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Px3PD98_EeW3l7M_cSZ57A" name="ItemDAO"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Px3PLt8_EeW3l7M_cSZ57A" name="ProductionUnit">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PL98_EeW3l7M_cSZ57A" name="productionunitdao" type="_Px3PI98_EeW3l7M_cSZ57A" association="_Px3PKt8_EeW3l7M_cSZ57A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PMN8_EeW3l7M_cSZ57A" name="productionDuration" visibility="public"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PMd8_EeW3l7M_cSZ57A" name="productionDueDate" visibility="public"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PMt8_EeW3l7M_cSZ57A" name="productionStatus" visibility="public"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PNN8_EeW3l7M_cSZ57A" name="getProductionDuration"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PNd8_EeW3l7M_cSZ57A" name="setProductionDuration"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PNt8_EeW3l7M_cSZ57A" name="getProductionDueDate"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PN98_EeW3l7M_cSZ57A" name="setProductionDueDate"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PON8_EeW3l7M_cSZ57A" name="getProductionStatus"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3POd8_EeW3l7M_cSZ57A" name="setProductionStatus"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PxuFEN8_EeW3l7M_cSZ57A" name="ProductLine">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PxuFEd8_EeW3l7M_cSZ57A" name="productionunit" type="_Px3PLt8_EeW3l7M_cSZ57A" association="_Px3PP98_EeW3l7M_cSZ57A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PxuFEt8_EeW3l7M_cSZ57A" name="productlinedao" type="_Px3POt8_EeW3l7M_cSZ57A" association="_Px3PH98_EeW3l7M_cSZ57A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PxuFE98_EeW3l7M_cSZ57A" name="ProductLineType" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PxuFFN8_EeW3l7M_cSZ57A" name="getProductLine"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PxuFFd8_EeW3l7M_cSZ57A" name="setProductLine"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Px3PEd8_EeW3l7M_cSZ57A" name="Car">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Px3PEt8_EeW3l7M_cSZ57A" general="_Px3PLt8_EeW3l7M_cSZ57A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PE98_EeW3l7M_cSZ57A" name="carModel" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PFN8_EeW3l7M_cSZ57A" name="getCarModel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PFd8_EeW3l7M_cSZ57A" name="setCarModel"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Px3PFt8_EeW3l7M_cSZ57A" name="Batch">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Px3PF98_EeW3l7M_cSZ57A" general="_Px3PLt8_EeW3l7M_cSZ57A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PGN8_EeW3l7M_cSZ57A" name="carModel" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Px3PGd8_EeW3l7M_cSZ57A" name="batchSize" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PGt8_EeW3l7M_cSZ57A" name="getCarModel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PG98_EeW3l7M_cSZ57A" name="setCarModel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PHN8_EeW3l7M_cSZ57A" name="getBatchSize"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Px3PHd8_EeW3l7M_cSZ57A" name="setBatchSize"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Px3PH98_EeW3l7M_cSZ57A" memberEnd="_PxuFEt8_EeW3l7M_cSZ57A _Px3PIt8_EeW3l7M_cSZ57A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Px3PIN8_EeW3l7M_cSZ57A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Px3PId8_EeW3l7M_cSZ57A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Px3PIt8_EeW3l7M_cSZ57A" name="productline" type="_PxuFEN8_EeW3l7M_cSZ57A" association="_Px3PH98_EeW3l7M_cSZ57A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_Px3PKN8_EeW3l7M_cSZ57A" name="Order"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Px3PKt8_EeW3l7M_cSZ57A" memberEnd="_Px3PL98_EeW3l7M_cSZ57A _Px3PLd8_EeW3l7M_cSZ57A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Px3PK98_EeW3l7M_cSZ57A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Px3PLN8_EeW3l7M_cSZ57A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Px3PLd8_EeW3l7M_cSZ57A" name="productionunit" type="_Px3PLt8_EeW3l7M_cSZ57A" association="_Px3PKt8_EeW3l7M_cSZ57A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Px3PP98_EeW3l7M_cSZ57A" memberEnd="_PxuFEd8_EeW3l7M_cSZ57A _Px3PQt8_EeW3l7M_cSZ57A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Px3PQN8_EeW3l7M_cSZ57A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Px3PQd8_EeW3l7M_cSZ57A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Px3PQt8_EeW3l7M_cSZ57A" name="productline" type="_PxuFEN8_EeW3l7M_cSZ57A" association="_Px3PP98_EeW3l7M_cSZ57A"/>
+  </packagedElement>
+</uml:Model>
