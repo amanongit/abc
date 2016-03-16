@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KMiIIOvKEeW44K-U3huAcw" name="RootElement">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_KRKJcOvKEeW44K-U3huAcw" name="ProductionUnit">
+    <region xmi:type="uml:Region" xmi:id="_KVWs8OvKEeW44K-U3huAcw" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_3IYsUOvKEeW44K-U3huAcw" source="_M_2kUOvKEeW44K-U3huAcw" target="_O4PpUOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5XUCAOvKEeW44K-U3huAcw" name="createProductionUnit()" source="_O4PpUOvKEeW44K-U3huAcw" target="_WTMX8OvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6JJuoOvKEeW44K-U3huAcw" name="productionDurationReached()" source="_WTMX8OvKEeW44K-U3huAcw" target="_mkFzkOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6wmJIOvKEeW44K-U3huAcw" name="shipProductionUnit()" source="_mkFzkOvKEeW44K-U3huAcw" target="_sP0AQOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_83_TcOvKEeW44K-U3huAcw" name="reportDefect()" source="_WTMX8OvKEeW44K-U3huAcw" target="_sP0AQOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="__hrSgOvKEeW44K-U3huAcw" name="elapseTime()" source="_WTMX8OvKEeW44K-U3huAcw" target="_WTMX8OvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_gIX34OvLEeW44K-U3huAcw" name="ProductionUnitReadyEarly()" source="_WTMX8OvKEeW44K-U3huAcw" target="_mkFzkOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-es9IOvLEeW44K-U3huAcw" source="_sP0AQOvKEeW44K-U3huAcw" target="_9NvEgOvLEeW44K-U3huAcw"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_M_2kUOvKEeW44K-U3huAcw" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_O4PpUOvKEeW44K-U3huAcw" name="Initialized"/>
+      <subvertex xmi:type="uml:State" xmi:id="_WTMX8OvKEeW44K-U3huAcw" name="In_Progress"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mkFzkOvKEeW44K-U3huAcw" name="Ready_to_ship"/>
+      <subvertex xmi:type="uml:State" xmi:id="_sP0AQOvKEeW44K-U3huAcw" name="Closed"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_9NvEgOvLEeW44K-U3huAcw" name="FinalState1"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_d6h8wOvKEeW44K-U3huAcw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d6qfoOvKEeW44K-U3huAcw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
