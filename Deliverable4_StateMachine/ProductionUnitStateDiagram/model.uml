@@ -4,18 +4,23 @@
     <region xmi:type="uml:Region" xmi:id="_KVWs8OvKEeW44K-U3huAcw" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_3IYsUOvKEeW44K-U3huAcw" source="_M_2kUOvKEeW44K-U3huAcw" target="_O4PpUOvKEeW44K-U3huAcw"/>
       <transition xmi:type="uml:Transition" xmi:id="_5XUCAOvKEeW44K-U3huAcw" name="createProductionUnit()" source="_O4PpUOvKEeW44K-U3huAcw" target="_WTMX8OvKEeW44K-U3huAcw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_6JJuoOvKEeW44K-U3huAcw" name="productionDurationReached()" source="_WTMX8OvKEeW44K-U3huAcw" target="_mkFzkOvKEeW44K-U3huAcw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_6wmJIOvKEeW44K-U3huAcw" name="shipProductionUnit()" source="_mkFzkOvKEeW44K-U3huAcw" target="_sP0AQOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6wmJIOvKEeW44K-U3huAcw" name="shipProductionUnit()" source="_mkFzkOvKEeW44K-U3huAcw"/>
       <transition xmi:type="uml:Transition" xmi:id="_83_TcOvKEeW44K-U3huAcw" name="reportDefect()" source="_WTMX8OvKEeW44K-U3huAcw" target="_sP0AQOvKEeW44K-U3huAcw"/>
       <transition xmi:type="uml:Transition" xmi:id="__hrSgOvKEeW44K-U3huAcw" name="elapseTime()" source="_WTMX8OvKEeW44K-U3huAcw" target="_WTMX8OvKEeW44K-U3huAcw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_gIX34OvLEeW44K-U3huAcw" name="ProductionUnitReadyEarly()" source="_WTMX8OvKEeW44K-U3huAcw" target="_mkFzkOvKEeW44K-U3huAcw"/>
       <transition xmi:type="uml:Transition" xmi:id="_-es9IOvLEeW44K-U3huAcw" source="_sP0AQOvKEeW44K-U3huAcw" target="_9NvEgOvLEeW44K-U3huAcw"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_M_2kUOvKEeW44K-U3huAcw" name="Initial1"/>
+      <transition xmi:type="uml:Transition" xmi:id="_cW7hYOvdEeW44K-U3huAcw" name="productionEndDate&lt;=shippingDate" source="_WTMX8OvKEeW44K-U3huAcw" target="_XBr7AOvdEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dfYXMOvdEeW44K-U3huAcw" name="currentDate = shippingDate" source="_XBr7AOvdEeW44K-U3huAcw" target="_mkFzkOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iHPTIOvdEeW44K-U3huAcw" name="productionEndDate = shippingDate" source="_WTMX8OvKEeW44K-U3huAcw" target="_mkFzkOvKEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_lL5hgOveEeW44K-U3huAcw" target="_9NvEgOvLEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_s3cQ4OveEeW44K-U3huAcw" source="_mkFzkOvKEeW44K-U3huAcw" target="_9NvEgOvLEeW44K-U3huAcw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IQVfMOvgEeW44K-U3huAcw" name="reportDefect()" source="_XBr7AOvdEeW44K-U3huAcw" target="_sP0AQOvKEeW44K-U3huAcw"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_M_2kUOvKEeW44K-U3huAcw" name="Initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_O4PpUOvKEeW44K-U3huAcw" name="Initialized"/>
-      <subvertex xmi:type="uml:State" xmi:id="_WTMX8OvKEeW44K-U3huAcw" name="In_Progress"/>
-      <subvertex xmi:type="uml:State" xmi:id="_mkFzkOvKEeW44K-U3huAcw" name="Ready_to_ship"/>
-      <subvertex xmi:type="uml:State" xmi:id="_sP0AQOvKEeW44K-U3huAcw" name="Closed"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_9NvEgOvLEeW44K-U3huAcw" name="FinalState1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_WTMX8OvKEeW44K-U3huAcw" name="In_Production"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mkFzkOvKEeW44K-U3huAcw" name="Shipped"/>
+      <subvertex xmi:type="uml:State" xmi:id="_sP0AQOvKEeW44K-U3huAcw" name="Defectuous"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_9NvEgOvLEeW44K-U3huAcw" name="FinalState"/>
+      <subvertex xmi:type="uml:State" xmi:id="_XBr7AOvdEeW44K-U3huAcw" name="In_Inventory"/>
     </region>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_d6h8wOvKEeW44K-U3huAcw">
